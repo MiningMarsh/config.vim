@@ -1,32 +1,8 @@
-" ################
-" # Start Vundle #
-" ################
+" ##########
+" # Vundle #
+" ##########
 
-set nocompatible
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" ###########
-" # Plugins #
-" ###########
-
-Plugin 'gmarik/Vundle.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-notes'
-Plugin 'xolox/vim-session'
-Plugin 'xolox/vim-lua-ftplugin'
-Plugin 'xolox/vim-lua-inspect'
-Plugin 'xolox/vim-tools'
-Plugin 'xolox/vim-shell'
-
-" ##############
-" # End Vundle #
-" ##############
-
-call vundle#end()
-filetype plugin indent on
+source ~/.vim/vundle.vim
 
 " #############
 " # Indention #
