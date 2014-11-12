@@ -120,3 +120,4 @@ let g:notes_title_sync = 'change_title'
 " ###########
 
 let g:session_autoload = 'no'
+let g:session_autosave = 'no'
