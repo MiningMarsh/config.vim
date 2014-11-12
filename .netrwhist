@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/joshua/Documents/the-space-hive-mind/Headers/Exception'
-let g:netrw_dirhist_2='/home/joshua/Documents/the-space-hive-mind/Source/Exception'
-let g:netrw_dirhist_3='/home/joshua/.vim/bundle/vim-notes/misc/notes/shadow'
-let g:netrw_dirhist_4='/home/joshua/.vim/bundle/vim-notes/autoload/xolox/notes'
