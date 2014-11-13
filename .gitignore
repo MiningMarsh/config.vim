@@ -1,4 +1,4 @@
-bundle
-.netrwhist
-.VimballRecord
-sessions
+.vim/bundle
+.vim/.netrwhist
+.vim/.VimballRecord
+.vim/sessions
