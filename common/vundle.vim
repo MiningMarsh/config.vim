@@ -11,7 +11,7 @@ call vundle#begin()
 " # Plugins #
 " ###########
 
-source ~/.vim/plugins.vim
+source ~/.vim/common/plugins.vim
 
 " ##############
 " # End Vundle #

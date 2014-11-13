@@ -2,7 +2,7 @@
 " # Vundle #
 " ##########
 
-source ~/.vim/vundle.vim
+source ~/.vim/common/vundle.vim
 
 " #############
 " # Indention #
