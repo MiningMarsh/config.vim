@@ -12,9 +12,6 @@ source ~/.vim/common/vundle.vim
 set tabstop=4
 set noexpandtab
 
-" Insert indents instead of tabs when at the start of a line.
-set smarttab
-
 " ######################
 " # Automatic Commands #
 " ######################
@@ -50,11 +47,6 @@ inoremap <Left> <NOP>
 inoremap <Right> <NOP>
 " B A Start
 
-" Map ,c to commenting every line that is encompassed by a movement.
-map ,c :set operatorfunc=Comment <CR>g@
-" Map ,u to un-commenting every line that is encompassed by a movement.
-map ,u :set operatorfunc=UnComment <CR>g@
-
 " ############
 " # Defaults #
 " ############
@@ -69,31 +61,3 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
-
-" #############
-" # Functions #
-" #############
-" Comments everything between the '[ and '] marks.
-function! Comment(mode)
-	'[,']s_^_\=b:commentPrefix _
-endfunction
-
-" Comments everything between the '[ and '] marks.
-function! UnComment(mode)
-	'[,']s_^\(\s*\)// _\1_
-endfunction
-
-" #########
-" # Notes #
-" #########
-
-let g:notes_directories = ['~/.google-drive/Notes']
-let g:notes_suffix = '.txt'
-let g:notes_title_sync = 'change_title'
-
-" ###########
-" # Session #
-" ###########
-
-let g:session_autoload = 'no'
-let g:session_autosave = 'no'
