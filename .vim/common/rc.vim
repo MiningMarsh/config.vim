@@ -31,7 +31,6 @@ autocmd InsertEnter * :set norelativenumber
 autocmd InsertLeave * :set number
 autocmd InsertLeave * :set relativenumber
 
-
 " ############
 " # Bindings #
 " ############
@@ -55,9 +54,9 @@ inoremap <Right> <NOP>
 set relativenumber
 set number
 
-" Set the default colors of everything.
 syntax enable
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+highlight CursorLineNr ctermbg=235
+highlight LineNr ctermbg=235
 
+source ~/.vim/common/sort.vim
+source ~/.vim/common/autocall.vim
