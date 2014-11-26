@@ -1,4 +1,4 @@
-function b:AutoCall()
+function! b:AutoCall()
 
 	" Check to see if the first line of the file is an import.
 	let l:ln = getline(1)
