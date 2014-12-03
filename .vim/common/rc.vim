@@ -10,6 +10,8 @@ source ~/.vim/common/vundle.vim
 
 " Display tabs as 4 spaces, but don't actually expand them.
 set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set noexpandtab
 
 " ######################
@@ -60,3 +62,5 @@ highlight LineNr ctermbg=235
 
 source ~/.vim/common/sort.vim
 source ~/.vim/common/autocall.vim
+source ~/.vim/common/comments.vim
+source ~/.vim/common/paste.vim

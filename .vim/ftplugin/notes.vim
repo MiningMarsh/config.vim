@@ -1,4 +1,4 @@
-function! b:AutoCall()
+function s:AutoCall()
 	" Removing trailing periods from note files.
 	silent! %s_\(^\s*[•◦▸▹▪▫].*\)[.]\s*$_\1_ge
 	" Remove empty bullet points.
@@ -12,6 +12,8 @@ function! b:AutoCall()
 	" Add a line between sections.
 	silent! %s_\n*\(\u.*[:]\)$_\r\r\1_ge
 endfunction
+
+let b:AutoCall = function("s:AutoCall")
 
 " Enable spell checking.
 setlocal spell spelllang=en_us

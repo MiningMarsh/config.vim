@@ -1,5 +1,4 @@
-function! b:AutoCall()
-
+function s:AutoCall()
 	" Check to see if the first line of the file is an import.
 	let l:ln = getline(1)
 	if l:ln[:5] is# "import"
@@ -23,3 +22,8 @@ function! b:AutoCall()
 	%s_(\s*\(byte\|short\|int\|long\|float\|double\|boolean\)\s*)\s*_(\1) _ge
 
 endfunction
+
+let b:AutoCall = function("s:AutoCall")
+let b:commentPrefix = "//"
+set smarttab
+set expandtab
