@@ -21,8 +21,8 @@ function! UnComment(mode)
 		" Save the cursor position.
 		let l:winview = winsaveview()
 
-		let @/="^\\(\\s*\\)" . b:commentPrefix . " "
-		'[,']s__\1_
+		let @/="^\\(\\s*\\)" . b:commentPrefix
+		'[,']s__\1_e
 
 		" Restore cursor position.
 		call winrestview(l:winview)
