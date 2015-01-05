@@ -64,3 +64,8 @@ source ~/.vim/common/sort.vim
 source ~/.vim/common/autocall.vim
 source ~/.vim/common/comments.vim
 source ~/.vim/common/paste.vim
+
+set listchars=eol:┐,tab:╺─,trail:─,precedes:╴,extends:╶,nbsp:╳,conceal:┄
+set list
+hi SpecialKey ctermfg=239 guifg=#4e4e4e
+hi NonText ctermfg=239 guifg=#4e4e4e

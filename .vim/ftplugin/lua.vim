@@ -1,2 +1,10 @@
-" Remove all tabs.
-autocmd BufWritePre <buffer> :%s_^\([ ]*\)\t\([ ]*.*\)$_\1    \2_ge
+function s:AutoCall()
+
+	" Replace tabs with spaces.
+	%s_\t_    _ge
+
+endfunction
+
+let b:commentPrefix="--"
+set smarttab
+set expandtab

@@ -27,3 +27,18 @@ let b:AutoCall = function("s:AutoCall")
 let b:commentPrefix = "//"
 set smarttab
 set expandtab
+
+inoremap <buffer> <expr> if( "if ("
+inoremap <buffer> <expr> while( "while ("
+inoremap <buffer> <expr> for( "for ("
+inoremap <buffer> <expr> * " * "
+inoremap <buffer> <expr> / " / "
+inoremap <buffer> <expr> - " - "
+inoremap <buffer> <expr> + " + "
+inoremap <buffer> <expr> (byte) "(byte) "
+inoremap <buffer> <expr> (short) "(short) "
+inoremap <buffer> <expr> (int) "(int) "
+inoremap <buffer> <expr> (long) "(long) "
+inoremap <buffer> <expr> (float) "(float) "
+inoremap <buffer> <expr> (double) "(double) "
+inoremap <buffer> <expr> (boolean) "(boolean) "
